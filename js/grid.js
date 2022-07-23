@@ -1,19 +1,14 @@
-// const elem = document.querySelector('.grid');
-// const iso = new Isotope(elem, {
-//   // options
-//   itemSelector: '.gallery__item',
-//   layoutMode: 'masonry',
-// });
-
-const elem = document.querySelector('.grid');
-const msnry = new Masonry(elem, {
-  // options
-  itemSelector: '.grid__item',
-  //   columnWidth: 200,
+import GridMasonry from 'GridMasonry';
+//Слушаем событие загрузки страницы
+document.addEventListener('DOMContentLoaded', e => {
+  //Создаем экземпляр класса с настройками и запускаем функцией init()
+  let Masonry = new GridMasonry({
+    containerClass: '.grid-masonry', //Контейнер для элементов сетки
+    itemClass: '.grid-masonry-item', //Каждый элемент сетки
+    itemContentClass: '.grid-masonry-item__container', //Контейнер внутри каждого элемента стеки
+    gridRowGap: '8px', //Верхний и нижний отступ
+    gridColumnGap: '8px', //Правый и левый отступ
+    itemMinWith: '138px', //Минимальная ширина одного элемента сетки
+    itemMaxWith: '283px', //Максимальная ширина одного элемента сетки, для работы адаптива нужно значение в единицах изменения fr
+  }).init();
 });
-
-// element argument can be a selector string
-//   for an individual element
-// const msnry = new Masonry('.grid', {
-//   // options
-// });
