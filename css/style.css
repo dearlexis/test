@@ -1,0 +1,11 @@
+.section {
+  width: 100%;
+  height: 550px;
+  padding: 60px 0;
+  background-image: linear-gradient(to bottom, #fff5f6 27%, #ffffff 27%, #ffffff 73%);
+  border: 1px solid red;
+}
+
+.gallery__list {
+  list-style: none;
+}

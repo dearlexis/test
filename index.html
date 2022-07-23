@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-<!-- Шапка сторінки -->
-<header>
-    <a href="/">Логотип сайту</a>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сторінки -->
+    <header>
+      <a href="/">Логотип сайту</a>
 
-    <nav>
+      <nav>
         <!-- Навігація на інші сторінки -->
         <ul>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/about">About</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about">About</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!-- Унікальний контент сторінки -->
-<main></main>
+    <!-- Унікальний контент сторінки -->
+    <main>
+      <section class="section gallery">
+        <h2 class="gallery__title" hidden>Gallery</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+          <li class="gallery__item"><img src="" alt="" class="gallery__img" /></li>
+        </ul>
+      </section>
+    </main>
 
-<!-- Підвал сторінки -->
-<footer>
-    <!-- ⚠️ Посилання на соцмережі, не nav -->
-    <ul>
+    <!-- Підвал сторінки -->
+    <footer>
+      <!-- ⚠️ Посилання на соцмережі, не nav -->
+      <ul>
         <li><a href="">Facebook</a></li>
         <li><a href="">Twitter</a></li>
         <li><a href="">Instagram</a></li>
-    </ul>
-</footer>
+      </ul>
+    </footer>
 
-<article>
-    <h1>Солодкий пиріжок</h1>
-    <img src="посилання на зображення пиріжка" alt="пиріжок" />
-    <p>
-        Дуже смачний печений пиріжок з різними наповнювачами: вишнею, персиком
-        сливою або полуницею.
-    </p>
-    <p>Ціна: 50 кредитів</p>
-</article>
-<section>
-    <h1>Найпопулярніші пиріжки цього тижня</h1>
+    <article>
+      <h1>Солодкий пиріжок</h1>
+      <img src="посилання на зображення пиріжка" alt="пиріжок" />
+      <p>
+        Дуже смачний печений пиріжок з різними наповнювачами: вишнею, персиком сливою або полуницею.
+      </p>
+      <p>Ціна: 50 кредитів</p>
+    </article>
+    <section>
+      <h1>Найпопулярніші пиріжки цього тижня</h1>
 
-    <!-- Всередині кожного <li> може бути картка пиріжка з секції «Тег <article>» -->
-    <ul>
+      <!-- Всередині кожного <li> може бути картка пиріжка з секції «Тег <article>» -->
+      <ul>
         <li>Смажений з грибами</li>
         <li>Смажений з м'ясом</li>
         <li>Печений з яблуками</li>
         <li>Печений з сиром</li>
-    </ul>
-</section>
-        </body>
+      </ul>
+    </section>
+  </body>
 </html>
